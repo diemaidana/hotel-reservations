@@ -10,7 +10,7 @@ import java.time.LocalDate;
 
 /*
 Inheritance:
-    - SIMPLE_TABLE: todo en una sola tabla. Se agrega @DiscriminationColumn, para saber que tipo de entidad es.
+    - SIMPLE_TABLE: una sola tabla. Se agrega @DiscriminationColumn, para saber que tipo de entidad es.
         * Simple y rapida, menos tablas. Muchas columnas nulas.
     - JOINED: Cada clase se mapea a su propia tabla, y las subclases se conectan mediante una tabla JOIN.
         * Limpio y normalizado. Requiere JOIN (mas lento), consultas complejas.
