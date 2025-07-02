@@ -2,12 +2,14 @@ package com.hotel.model.entities;
 
 import io.swagger.v3.oas.annotations.tags.Tags;
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+@Entity
 @Table(name = "clients")
 @Data
 @NoArgsConstructor
@@ -21,31 +23,31 @@ public class Client extends User{
     private String address;
 
     @Column(
-            name = "address",
+            name = "city",
             nullable = true
     )
     private String city;
 
     @Column(
-            name = "address",
+            name = "country",
             nullable = true
     )
     private String country;
 
     @Column(
-            name = "address",
+            name = "zipCode",
             nullable = true
     )
     private String zipCode;
 
     @Column(
-            name = "address",
+            name = "phone",
             nullable = true
     )
     private String phone;
 
     @Column(
-            name = "address",
+            name = "passportNumber",
             nullable = true
     )
     private String passportNumber;
